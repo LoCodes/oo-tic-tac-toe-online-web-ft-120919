@@ -98,7 +98,17 @@ class TicTacToe
   def position(location)
     @board[location.to_i]
   end
-
+def position_taken?(board, position)
+ if board[position] == " "
+   false
+ elsif board[position] == ""
+   false
+ elsif board[position] == nil
+   false
+ else
+     true
+ end
+end
   def position_taken?(location)
     !(position(location).nil? || position(location) == " ")
   end
