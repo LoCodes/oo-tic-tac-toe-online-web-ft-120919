@@ -109,7 +109,3 @@ def position_taken?(board, position)
      true
  end
 end
-  def position_taken?(location)
-    !(position(location).nil? || position(location) == " ")
-  end
-end
